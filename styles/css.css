@@ -1,0 +1,552 @@
+@font-face {
+    font-family: "Graphik Regular";
+    src: url(./fonts/GraphikRegular.otf) format("opentype");
+}
+
+:root {
+    --background-grey: #E5E5E5;
+    --yellow: #F3C92B;
+    --black-text: #333333;
+    --white-text: #FFFFFF;
+    --black-nav: #000000;
+    --light-blue: #0487D9;
+    --dark-blue-bg: #1F47BF;
+    --dark-blue-fg: #1B3DA6;
+    --background-filter-color: rgba(17, 1, 1, 0.5);
+    --normal-text: normal normal normal 18px "Graphik Regular", sans-serif;
+    --normal-heading-text: normal normal normal 48px "Graphik Regular", sans-serif;
+    --normal-small-heading-text: normal normal bold 32px "Graphik Regular", sans-serif;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font: var(--normal-text)
+}
+
+.nav-toggle {
+    display: none;
+    border: solid var(--black-nav);
+    border-radius: 10px;
+    padding: 5px 8px;
+}
+
+.nav-toggle:hover {
+    cursor: pointer;
+}
+
+.nav-toggle>div {
+    display: block;
+    border: solid var(--black-nav);
+    width: 30px;
+    margin: 4px 0;
+}
+
+a.link:link {
+    background-color: var(--dark-blue-bg);
+    color: var(--white-text);
+    text-decoration: none;
+}
+
+a.link:hover {
+    color: var(--dark-blue-bg);
+    background-color: var(--white-text);
+    text-decoration: none;
+}
+
+a.link:active {
+    background-color: var(--dark-blue-bg);
+    color: var(--white-text);
+    text-decoration: none;
+}
+
+a.link:visited {
+    background-color: var(--dark-blue-bg);
+    color: var(--white-text);
+    text-decoration: none;
+}
+
+.nav-wrapper {
+    margin: 0rem 3rem;
+}
+
+.nav {
+    display: flex;
+    font: var(--normal-text)
+}
+
+.nav-list {
+    list-style: none;
+    margin-left: auto;
+    padding: 0;
+}
+
+.nav-list>li {
+    display: inline-block;
+    padding: 0.5em 1rem;
+}
+
+.nav-item>a:link {
+    color: var(--black-nav);
+    text-decoration: none;
+}
+
+#contact-us>a:link {
+    color: var(--dark-blue-fg);
+    text-decoration: none;
+}
+
+.logo-link>img {
+    padding: 0.5em 0px 0.5em;
+}
+
+.header-background {
+    background-image: url('/images/banner.png');
+    background-repeat: no-repeat;
+    background-clip: content-box;
+    background-size: cover;
+}
+
+.header-background>img {
+    width: 100%;
+}
+
+.header-content-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.background-filter {
+    position: relative;
+    /* position: absolute; */
+    background-color: var(--background-filter-color);
+    opacity: 0.5;
+}
+
+.header-cards-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 9% 6% 2% 7%;
+}
+
+.header-card {
+    margin: 1rem;
+}
+
+.caption-paragraph {
+    font: normal normal bold 48px "Graphik Regular", sans-serif;
+    color: var(--white-text);
+    flex-basis: 50%
+}
+
+.header-caption {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 18% 12% 12% 7%;
+}
+
+.link {
+    padding: 16px 40px;
+    background-color: var(--dark-blue-bg);
+    color: var(--white-text);
+    border-radius: 5px;
+}
+
+section>header>div>h1::after {
+    background-color: var(--yellow);
+    display: block;
+    height: 5px;
+    width: 60px;
+    content: '';
+}
+
+section>header>div>h1 {
+    font: var(--normal-small-heading-text);
+    padding: 4% 0;
+}
+
+.h1-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.why-choose-us {
+    background-color: var(--background-grey);
+    font: var(--normal-text);
+}
+
+.why-choose-us-article {
+    display: flex;
+    justify-content: center;
+    margin: 1% 14%;
+    padding: 0% 0% 11% 0%;
+}
+
+.why-choose-us-card {
+    background-color: white;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    margin: 1%;
+    padding: 1em;
+}
+
+.why-choose-us-card>h4 {
+    color: var(--dark-blue-fg);
+}
+
+.our-facilities {
+    padding: 0%;
+}
+
+.facilities-top-flex {
+    display: flex;
+    margin: 0 9%;
+    padding-bottom: 9%;
+}
+
+.facilities-article-wrapper {
+    flex-basis: 51%;
+    padding: 0 3%;
+}
+
+.facilities-article {
+    line-height: 2em;
+}
+
+.facilities-images-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    flex-basis: 65%;
+    grid-gap: 30px;
+    justify-items: center;
+    margin-top: 1%;
+}
+
+.facility-image>img {
+    min-width: 300px;
+}
+
+.facilities-video-div {
+    display: flex;
+    background-color: var(--background-grey);
+    padding: 10% 0;
+}
+
+.facilities-tour-article {
+    flex-basis: 50%;
+    line-height: 2em;
+}
+
+.facilities-tour-article>div {
+    margin: 13% 0;
+}
+
+.facilities-tour {
+    padding: 0 4%;
+}
+
+.facilities-tour-text {
+    padding: 0 4% 0% 12%;
+}
+
+.facilities-tour-text>header>h1 {
+    padding: 0em;
+}
+
+.book-a-visit-div {
+    padding: 11% 0;
+}
+
+.our-medals {
+    padding-bottom: 4em;
+}
+
+.our-medals-div {
+    display: flex;
+}
+
+.medals-list-wrapper {
+    flex-basis: 50%;
+}
+
+.medals-list-wrapper>ul, .subject-list {
+    list-style-image: url("/images/bullet.png");
+    margin-top: 0;
+}
+
+.medals-list-wrapper>ul>li, .subjects {
+    padding: 0px 1rem;
+    margin: 0 4em;
+    line-height: 3em;
+}
+
+.medals-images-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fill, 292px);
+    grid-gap: 1em;
+    padding-top: 1em;
+    flex-basis: 50%;
+}
+
+.view-more-div {
+    padding: 2em;
+}
+
+.arc {
+    position: relative;
+    background: #FFFFFF;
+    width: 100%;
+    height: 60px;
+    clip-path: ellipse(52% 100% at 50% -3%);
+}
+
+.testimonials {
+    background-color: var(--light-blue)
+}
+
+.testimonials>header>div>h1 {
+    color: white;
+}
+
+.testimonials-wrapper {
+    display: flex;
+}
+
+.testimonial {
+    margin: 0 12% 12% 12%;
+    color: white;
+    line-height: 1.5em;
+}
+
+.summer-coaching {
+    display: flex;
+    background-color: var(--background-grey);
+    padding: 4em 4em 0 4em;
+}
+
+.summer-coaching>div {
+    margin: 1em;
+}
+
+.summer-coaching-image1 {
+    position: relative;
+}
+
+.summer-coaching-image2 {
+    position: relative;
+    top: -31%;
+    left: 61%;
+}
+
+.summer-coaching-article {
+    margin-left: 8em;
+    line-height: 2em;
+}
+
+.summer-coaching-enroll-div {
+    margin-top: 3em;
+}
+
+footer {
+    padding: 3em 0;
+    background-color: var(--dark-blue-bg);
+    display: flex;
+    justify-content: space-evenly;
+    color: var(--white-text)
+}
+
+.footer-list>li>a:link {
+    color: var(--white-text);
+    text-decoration: none;
+}
+
+.footer-list>li>a:visited {
+    color: var(--white-text);
+    text-decoration: none;
+}
+
+.footer-list>li>a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.footer-list>li>a:active {
+    color: var(--white-text);
+    text-decoration: none;
+}
+
+.footer-list {
+    list-style: none;
+    margin: 0em;
+}
+
+.footer-list>li {
+    margin: 0em 1em 1em 0em;
+}
+
+.attrib2 {
+    display: none;
+}
+
+.footer-segment>div>a:link {
+    color: var(--white-text);
+    text-decoration: none;
+}
+
+.footer-segment>div>a:visited {
+    color: var(--white-text);
+    text-decoration: none;
+}
+
+.footer-segment>div>a:hover {
+    color: var(--black-nav);
+    text-decoration: none;
+}
+
+.footer-segment>div>a:active {
+    color: var(--white-text);
+    text-decoration: none;
+}
+
+.attribution {
+    margin-top: 2em;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .nav-wrapper {
+        margin: 0;
+    }
+    .nav {
+        display: block;
+    }
+    .nav-list {
+        display: none;
+        position: absolute;
+        list-style: none;
+        margin-left: auto;
+        padding: 0;
+        right: 1px;
+        margin: 0;
+        background: var(--white-text);
+        width: 100%;
+        z-index: 999;
+    }
+    .nav-list-show {
+        display: block !important;
+    }
+    .nav-toggle {
+        display: inline-block;
+        border: solid var(--black-nav);
+        border-radius: 10px;
+        padding: 5px 8px;
+    }
+    .nav-list>li {
+        display: block;
+        padding: 0.5em 1rem;
+        border-top: solid 1px var(--background-grey);
+        text-align: center;
+    }
+    .logo-wrapper {
+        display: flex;
+    }
+    .nav-toggle-container {
+        margin-left: auto;
+        padding-top: 10px;
+    }
+    .header-cards-wrapper {
+        display: none;
+    }
+    .why-choose-us-article {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .facilities-top-flex {
+        display: flex;
+        flex-direction: column;
+    }
+    .facilities-tour {
+        text-align: center;
+    }
+    .facilities-tour>img {
+        width: 100%;
+    }
+    .facilities-video-div {
+        display: flex;
+        flex-direction: column;
+    }
+    .medals-images-wrapper {
+        justify-content: center;
+    }
+    .our-medals-div {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .link-wrapper {
+        text-align: center;
+    }
+    .testimonial-image-wrapper {
+        text-align: center;
+    }
+    .testimonials-wrapper {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .testimonial {
+        padding: 0 1em;
+    }
+    .summer-coaching {
+        flex-direction: column;
+    }
+    .summer-coaching>div:first-child {
+        text-align: center;
+    }
+    .summer-coaching-image2 {
+        display: none;
+    }
+    .summer-coaching-article {
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .why-choose-us-article {
+        margin: 0;
+        padding: 0%;
+    }
+    .facilities-tour>img {
+        width: 100%;
+    }
+    .summer-coaching {
+        padding: 0;
+    }
+    .summer-coaching-image1 {
+        width: 100%;
+    }
+    .testimonial {
+        margin: 0;
+    }
+    .medals-list-wrapper>ul>li {
+        margin: 0;
+    }
+    .footer-list {
+        text-align: center;
+    }
+    footer {
+        flex-direction: column;
+    }
+    .attrib2 {
+        display: block;
+        text-align: center;
+    }
+    .attrib {
+        display: none;
+    }
+    .link-wrapper {
+        text-align: center;
+    }
+}
